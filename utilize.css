@@ -1,3 +1,24 @@
+:root {
+  /* ---- Color ---- */
+  --header-bg-color: #e3e6f3;
+  --primary-color: #088178;
+
+  --card-text-bg-color: #fddde4;
+
+  /* * Font Color */
+  --text-color: #222;
+  --span-color: #060636;
+  --para-color: #465b52;
+  --white-color: #fff;
+
+  --link-color: #1a1a1a;
+
+  /*? - Border -  */
+  --border: 1px solid var(--border-color);
+  --border-color: #cce7d0;
+  --border-radius: 4px;
+}
+
 * {
   margin: 0;
   padding: 0;
