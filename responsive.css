@@ -71,6 +71,13 @@
   #newsletter .form {
     width: 70%;
   }
+
+  #read-more {
+    display: inline;
+  }
+  #read-more-text {
+    display: none;
+  }
 }
 
 @media (max-width: 477px) {
@@ -130,5 +137,19 @@
 
   footer .copyright {
     text-align: start;
+  }
+
+  /* Product Detail */
+  #prodetails {
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
   }
 }

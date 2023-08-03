@@ -32,3 +32,17 @@ for (const card of productCard) {
     location.href = "sproduct.html";
   };
 }
+
+// Read More Functionality
+const readMore = document.getElementById("read-more");
+const readMoreText = document.getElementById("read-more-text");
+
+readMore.addEventListener("click", () => {
+  if (readMore.textContent === "read more...") {
+    readMore.textContent = "read less";
+    readMoreText.style.display = "inline";
+  } else {
+    readMore.textContent = "read more...";
+    readMoreText.style.display = "none";
+  }
+});
