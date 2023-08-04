@@ -37,12 +37,33 @@ for (const card of productCard) {
 const readMore = document.getElementById("read-more");
 const readMoreText = document.getElementById("read-more-text");
 
-readMore.addEventListener("click", () => {
-  if (readMore.textContent === "read more...") {
-    readMore.textContent = "read less";
-    readMoreText.style.display = "inline";
+const showReadMoreText = () => {
+  readMore.textContent = "read less";
+  readMoreText.style.display = "inline";
+};
+
+const hideReadMoreText = () => {
+  readMore.textContent = "read more...";
+  readMoreText.style.display = "none";
+};
+
+if (readMore) {
+  let isOpen = false;
+  readMore.addEventListener("click", () => {
+    if (!isOpen) {
+      showReadMoreText();
+      isOpen = true;
+    } else {
+      hideReadMoreText();
+      isOpen = false;
+    }
+  });
+}
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 799) {
+    showReadMoreText();
   } else {
-    readMore.textContent = "read more...";
-    readMoreText.style.display = "none";
+    hideReadMoreText();
   }
 });
