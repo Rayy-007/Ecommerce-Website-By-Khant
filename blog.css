@@ -8,6 +8,8 @@
 
 #blog .blog-box {
   width: 100%;
+  position: relative;
+  padding-bottom: 90px;
 }
 
 #blog .blog-img {
@@ -49,4 +51,14 @@
 
 #blog .blog-details a:hover::after {
   background-color: var(--primary-color);
+}
+
+#blog .blog-box h1 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbc0;
+  z-index: -999;
 }

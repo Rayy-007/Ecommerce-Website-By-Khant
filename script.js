@@ -36,19 +36,19 @@ for (const card of productCard) {
 const readMore = document.getElementById("read-more");
 const readMoreText = document.getElementById("read-more-text");
 
-// To show the text
-const showReadMoreText = () => {
-  readMore.textContent = "read less";
-  readMoreText.style.display = "inline";
-};
-
-// To hide the text
-const hideReadMoreText = () => {
-  readMore.textContent = "read more...";
-  readMoreText.style.display = "none";
-};
-
 if (readMore) {
+  // To show the text
+  const showReadMoreText = () => {
+    readMore.textContent = "read less";
+    readMoreText.style.display = "inline";
+  };
+
+  // To hide the text
+  const hideReadMoreText = () => {
+    readMore.textContent = "read more...";
+    readMoreText.style.display = "none";
+  };
+
   let isOpen = false;
   readMore.addEventListener("click", () => {
     if (!isOpen) {
@@ -59,13 +59,12 @@ if (readMore) {
       isOpen = false;
     }
   });
+  // if the screen size is lager than 799 px the read more text will be shown
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 799) {
+      showReadMoreText();
+    } else {
+      hideReadMoreText();
+    }
+  });
 }
-
-// if the screen size is lager than 799 px the read more text will be shown
-window.addEventListener("resize", () => {
-  if (window.innerWidth >= 799) {
-    showReadMoreText();
-  } else {
-    hideReadMoreText();
-  }
-});
