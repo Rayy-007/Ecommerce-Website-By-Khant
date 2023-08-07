@@ -152,4 +152,18 @@
   #prodetails .single-pro-details {
     width: 100%;
   }
+
+  /* About us  */
+  #about-head {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #about-head img {
+    width: 100%;
+  }
+
+  #about-app .video {
+    width: 100%;
+  }
 }
