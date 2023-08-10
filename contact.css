@@ -1,0 +1,23 @@
+#contact-details {
+  justify-content: space-between;
+}
+
+#contact-deails .details {
+  width: 40%;
+}
+
+#contact-deails .details span {
+  font-size: 12px;
+}
+
+#contact-deails .details h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+.details ul li i,
+.details ul li p {
+  display: inline-block;
+  margin-inline: 5px;
+}
