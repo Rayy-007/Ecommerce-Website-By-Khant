@@ -28,7 +28,7 @@ for (const img of smallImg) {
 const productCard = document.getElementsByClassName("pro");
 for (const card of productCard) {
   card.onclick = () => {
-    location.href = "sproduct.html";
+    location.href = "../product/sproduct.html";
   };
 }
 
