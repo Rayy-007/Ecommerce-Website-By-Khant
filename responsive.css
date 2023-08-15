@@ -200,4 +200,16 @@
     width: 100%;
     margin-bottom: 30px;
   }
+
+  /* === Add to Cart === */
+  #cart-add {
+    flex-direction: column;
+  }
+  #coupon {
+    width: 100%;
+  }
+  #subtotal {
+    width: 100%;
+    padding: 20px;
+  }
 }
