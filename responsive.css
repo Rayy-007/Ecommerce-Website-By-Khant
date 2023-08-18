@@ -35,7 +35,7 @@
   #hero {
     height: 70vh;
 
-    background-position: top 30% right 30%;
+    background-position: top 30% right 80%;
   }
 
   #feature {
@@ -96,11 +96,12 @@
 
   #hero {
     padding: 0 20px;
-    background-position: 55%;
+    background-position: 35%;
   }
 
   h2 {
     font-size: 32px;
+    color: var(--primary-color);
   }
 
   h1 {
