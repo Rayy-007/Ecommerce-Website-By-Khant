@@ -18,7 +18,8 @@
 
   /*? - Border -  */
   --border: 1px solid var(--border-color);
-  --border-color: #cce7d0;
+  /* --border-color: #cce7d0; */
+  --border-color: rgb(212, 176, 131);
   --border-radius: 4px;
 }
 

@@ -1,5 +1,13 @@
 /* ============ Media Query ============ */
+@media (max-width: 929px) {
+  #hero img {
+    display: none;
+  }
 
+  #hero {
+    align-items: flex-start;
+  }
+}
 @media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
@@ -35,7 +43,11 @@
   #hero {
     height: 70vh;
 
-    background-position: top 30% right 80%;
+    background-position: top 30% right 40%;
+  }
+
+  #hero img {
+    display: none;
   }
 
   #feature {
@@ -96,7 +108,7 @@
 
   #hero {
     padding: 0 20px;
-    background-position: 35%;
+    background-position: 85%;
   }
 
   h2 {
