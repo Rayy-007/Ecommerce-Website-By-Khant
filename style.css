@@ -225,7 +225,7 @@
 }
 
 #product1 .pro:hover {
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 00px 0px 30px rgba(0, 0, 0, 0.4);
 }
 
 #product1 .pro img {
@@ -334,7 +334,8 @@
 }
 
 #sm-banner .banner-box2 {
-  background-image: url("img/banner/b10.jpg");
+  /* background-image: url("img/banner/b10.jpg"); */
+  background-image: url("img/girl&man.jpg");
 }
 
 #sm-banner h4,
