@@ -336,7 +336,21 @@
 #sm-banner .banner-box2 {
   /* background-image: url("img/banner/b10.jpg"); */
   background-image: url("img/girl&man.jpg");
+  position: relative;
 }
+
+#sm-banner .banner-box2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* #sm-banner .banner-box2 h4,
+#sm-banner .banner-box2 h2,
+#sm-banner .banner-box2 span {
+  color: #000;
+} */
 
 #sm-banner h4,
 #sm-banner h2,
@@ -344,6 +358,7 @@
   color: var(--white-color);
   font-size: 20px;
   font-weight: 300;
+  z-index: 2;
 }
 
 #sm-banner h2 {
@@ -392,7 +407,7 @@
 }
 
 #banner3 h3 {
-  color: #ec544e;
+  color: #fef73a;
   font-weight: 800;
   font-size: 15px;
 }
